@@ -1,6 +1,6 @@
 package academy.devdojo.maratonajava.introducao;
 
-public class Aila04Operadores {
+public class Aula04Operadores {
     public static void main(String[] args) {
         int num1 = 11;
         int num2 = 20;
@@ -28,5 +28,15 @@ public class Aila04Operadores {
         System.out.println("isDezMenorQueVinte? " + isDezMenorQueVinte);
         System.out.println("isDezIgualQueVinte? " + isDezIgualQueVinte);
         System.out.println("isDezDiferenteQueVinte? " + isDezDiferenteQueVinte);
+
+        //Operadores logicos --> &&(AND) ||(OR) !(NOT)
+
+        int idade = 29;
+        float salario = 3400f;
+        boolean isDentroDaLeiMaiorQueTrinta = (idade > 30) && (salario > 4612);
+        boolean isDentroDaLeiMenorQueTrinta = (idade < 30) && (salario >= 3381);
+
+        System.out.println("isDentroDaLeiMaiorQueTrinta? " + isDentroDaLeiMaiorQueTrinta);
+        System.out.println("isDentroDaLeiMenorQueTrinta? " + isDentroDaLeiMenorQueTrinta);
     }
 }
