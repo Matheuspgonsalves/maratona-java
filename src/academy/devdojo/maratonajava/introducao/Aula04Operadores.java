@@ -38,5 +38,31 @@ public class Aula04Operadores {
 
         System.out.println("isDentroDaLeiMaiorQueTrinta? " + isDentroDaLeiMaiorQueTrinta);
         System.out.println("isDentroDaLeiMenorQueTrinta? " + isDentroDaLeiMenorQueTrinta);
+
+        double valorTotalContaCorrente = 200;
+        double valorTotalContaPoupanca = 5000;
+        float valorPS5 = 5000F;
+        boolean isPS5Compravel = valorTotalContaCorrente > valorPS5 ||
+                valorTotalContaPoupanca > valorPS5 ||
+                (valorTotalContaPoupanca + valorTotalContaCorrente) > valorPS5;
+
+        System.out.println("isPS5Compravel? " + isPS5Compravel);
+
+        //Operadores de atribuicao -> += -= *= /= %=
+        double bonus = 1800;
+        bonus += 1000; // 2800
+        bonus -= 2000; // 1800
+        bonus *= 2; // 3600
+        bonus /= 2; // 1800
+        bonus %= 2; // 0
+        System.out.println(bonus);
+
+        //Incrementos ++ --
+        int contador = 0;
+        contador += 1;
+        contador++;
+        System.out.println(contador);
+
+
     }
 }
